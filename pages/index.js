@@ -12,7 +12,7 @@ export default function Home() {
         <div className="lg:w-1/3 w-full mx-auto hero-text font-body">
           <img
             src="/images/logo.svg"
-            className=" mt-12 mx-8 lg:mx-0"
+            className=" mt-16 mx-8 lg:mx-0"
             alt="base apparel"
           />
           <img
