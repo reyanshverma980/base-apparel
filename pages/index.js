@@ -50,7 +50,7 @@ export default function Home() {
                 <img
                   src="/images/icon-arrow.svg"
                   className="absolute hover:shadow-2xl sm:px-10 px-7 py-4 form-btn top-1/2 -translate-y-1/2 rounded-full -translate-x-1/2"
-                />
+                />{" "}
               </button>
             </form>
           </div>
