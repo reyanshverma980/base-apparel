@@ -1,26 +1,44 @@
-html,
-body {
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
 }
 
-* {
-  box-sizing: border-box;
+.hero {
+  background-image: url("/images/bg-pattern-desktop.svg"),
+    linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  background-position: center;
+  background-size: cover;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.hero-text h1 {
+  letter-spacing: 1.5rem;
+}
+
+.hero-text p {
+  line-height: 1.5;
+}
+
+.form-btn {
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+.form-btn:hover {
+  background-image: linear-gradient(
+    135deg,
+    hsl(0, 100%, 93%),
+    hsl(0, 80%, 86%)
+  );
 }
